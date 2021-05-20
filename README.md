@@ -13,7 +13,7 @@ et le code correspondant se trouve dans le notebook `vols.ipynb`
 ### Lignes aériennes
 On utilise les données fournies par Eurostat : https://ec.europa.eu/eurostat/databrowser/view/avia_par_fr/default/table?lang=en (tableur `flights.csv`)
 
-Elles contiennent les liaisons aériennes et leur fréquentation par année. On fait attention à ne garder que les lignes actives en 2019/2020.
+Elles contiennent les liaisons aériennes et leurs fréquentations par année. On fait attention à ne garder que les lignes actives en 2019/2020.
 
 
 ### Temps de parcours en train
