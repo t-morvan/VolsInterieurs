@@ -7,6 +7,8 @@ On se propose ici de construire une carte interactive qui permettrait d’explor
 Le résultat est à tester sur :
 https://observablehq.com/@tmorvan/vols-interieurs-et-trains
 
+et le code correspondant se trouve dans le notebook `vols.ipynb'
+
 ## Sources des données :
 ### Lignes aériennes
 On utilise les données fournies par Eurostat : https://ec.europa.eu/eurostat/databrowser/view/avia_par_fr/default/table?lang=en (tableur `flights.csv`)
