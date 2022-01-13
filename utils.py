@@ -27,15 +27,12 @@ class getDuration:
     def compute(self, departure, arrival):
         params = self.make_params(departure, arrival)
         res = self.session.get(url=URL_SNCF, params=params)
-        if res.status_code!=200:
-            logging.warning(f"SNCF API error {res.status_code} : {departure}-{arrival}")
-        # si pas de trajet retourne un temps 'infini'
-        try :
+        if res.status_code == 200:
             trajets = res.json()['journeys']
-        except KeyError:
-            return 60*10000
-        # on prend le trajet le plus court de la journée
-        return min(trajet['duration'] for trajet in trajets)
+            return min(trajet['duration'] for trajet in trajets)
+        else :
+            logging.warning(f"SNCF API error {res.status_code} : {departure}-{arrival}")
+            return float('nan')
     
 def get_flights():
     #  lecture data

@@ -43,8 +43,8 @@ if __name__=="__main__" :
          'arrival' : flight.arrival, 
          'lat_d' : lat_d,
          'lon_d' : lon_d,
-         'lat_d' : lat_d,
-         'lon_d' : lon_d,
+         'lat_a' : lat_a,
+         'lon_a' : lon_a,
          'duration' : duration
       })
       
